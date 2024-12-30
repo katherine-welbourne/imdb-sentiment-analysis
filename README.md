@@ -1,7 +1,3 @@
-Here’s an example structure for your `README.md` file tailored for your `imdb-sentiment-analysis` project:
-
----
-
 # **IMDB Sentiment Analysis**
 Fine-tuning a BERT-based language model to classify movie reviews as positive or negative using the IMDB dataset.
 
@@ -122,7 +118,3 @@ Feel free to contribute by submitting issues or pull requests. For major changes
 
 ## **License**
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-This README provides a professional and structured overview of your project. Let me know if you want me to adjust or add specific details!
