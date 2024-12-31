@@ -89,8 +89,8 @@ Metrics:
 Example predictions:
 | Input Text                                | Prediction       | Confidence |
 |-------------------------------------------|------------------|------------|
-| "This movie was amazing! I loved it."     | :blush: Positive | 97.34%     |
-| "The plot was boring and uninspired."     | :rage: Negative  | 92.88%     |
+| "This movie was amazing! I loved it."     | :blush: Positive | 99.90%     |
+| "The plot was boring and uninspired."     | :rage: Negative  | 99.87%     |
 
 ---
 
