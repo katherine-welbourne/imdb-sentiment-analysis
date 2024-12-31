@@ -3,7 +3,7 @@ Fine-tuning a BERT-based language model to classify movie reviews as positive or
 ---
 
 <a href="https://github.com/katherine-welbourne/imdb-sentiment-analysis">
- <img src="assets/img/movieSentimentAnalysis.png" alt="LLM Sentiment Analysis" width="100">
+ <img src="movieSentimentAnalysis.png" alt="LLM Sentiment Analysis" width="100">
 </a>
 
 ---
