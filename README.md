@@ -65,6 +65,8 @@ To run the project locally, follow these steps:
    pip install transformers[torch] accelerate datasets
    python3 train_movie_sentiment.py
    ```
+- **Compute Resources**: A100 GPU, High RAM.
+- **Runtime**: ~20 minutes.
 
 ---
 
