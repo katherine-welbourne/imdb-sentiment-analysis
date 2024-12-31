@@ -61,22 +61,8 @@ To run the project locally, follow these steps:
 ---
 
 ## **Training** 🏋️
-1. Preprocess the dataset:
-   ```python
-   from datasets import load_dataset
-   dataset = load_dataset("imdb")
-   ```
-
-2. Fine-tune the model:
-   ```python
-   from transformers import Trainer, TrainingArguments
-   # Define training arguments and train the model
-   ```
-
-3. Save the fine-tuned model:
-   ```python
-   model.save_pretrained("./movie_sentiment_model")
-   tokenizer.save_pretrained("./movie_sentiment_model")
+   ```bash
+   python3 train_movie_sentiment.py
    ```
 
 ---
@@ -116,7 +102,7 @@ You can test the sentiment analysis model locally using two approaches:
    python3 run_gradio_movie_sentiment.py
    ```
 
-3. Open the Gradio app in your browser using the local URL provided in the terminal (e.g., `http://127.0.0.1:7860`).
+3. Open the Gradio app in your browser using the local URL provided in the terminal.
 
 ### **Option 2: Terminal-Based App** 💻
 1. Run the terminal-based script:
