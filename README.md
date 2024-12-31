@@ -75,8 +75,8 @@ To run the project locally, follow these steps:
 
 3. Save the fine-tuned model:
    ```python
-   model.save_pretrained("./sentiment_model")
-   tokenizer.save_pretrained("./sentiment_model")
+   model.save_pretrained("./movie_sentiment_model")
+   tokenizer.save_pretrained("./movie_sentiment_model")
    ```
 
 ---
