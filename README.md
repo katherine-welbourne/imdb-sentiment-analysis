@@ -76,12 +76,14 @@ Evaluate the model's performance on the test set:
 trainer.evaluate()
 ```
 
-Metrics:
-- **Evaluation Loss**: `0.3242` 📉
-- **Evaluation Runtime**: `98.87 seconds` ⏱️
-- **Samples/Second**: `252.87` ⚡
-- **Steps/Second**: `31.61` 🚀
-- **Epoch**: `3.0` 🔄
+### **Metrics:**
+- **Evaluation Loss**: `0.3285` 📉  
+- **Accuracy**: `93.22%` ✅  
+- **F1-Score**: `93.22%` 🎯  
+- **Evaluation Runtime**: `97.86 seconds` ⏱️  
+- **Samples/Second**: `255.47` ⚡  
+- **Steps/Second**: `31.93` 🚀  
+- **Epoch**: `3.0` 🔄  
 
 ---
 
