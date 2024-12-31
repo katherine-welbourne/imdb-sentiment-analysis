@@ -24,7 +24,7 @@ Key features:
 - Preprocessing and tokenization using Hugging Face's `transformers`.
 - Fine-tuning with Hugging Face's `Trainer` API.
 - Real-world predictions on unseen text data.
-- Interactive demo via Gradio/Streamlit.
+- Interactive demo via Gradio (run locally).
 
 ---
 
@@ -94,25 +94,53 @@ Metrics:
 
 ## **Results**
 Example predictions:
-| Input Text                                | Prediction |
-|-------------------------------------------|------------|
-| "This movie was amazing! I loved it."     | Positive   |
-| "The plot was boring and uninspired."     | Negative   |
+| Input Text                                | Prediction       | Confidence |
+|-------------------------------------------|------------------|------------|
+| "This movie was amazing! I loved it."     | :blush: Positive      | 97.34%     |
+| "The plot was boring and uninspired."     | :rage: Negative      | 92.88%     |
 
 ---
 
 ## **Demo**
-Try the model using the interactive web app:
-- **Demo Link**: [Gradio/Streamlit App](#) *(Add link once hosted)*
-- Run locally:
+
+You can test the sentiment analysis model locally using two approaches:
+
+### **Option 1: Gradio App**
+1. Make sure you have `gradio` installed:
    ```bash
-   python app.py
+      pip install gradio
    ```
+2. Run the Gradio app:
+   ```bash
+   python3 run_gradio_movie_sentiment.py
+   ```
+### **Option 2: Terminal-Based App**
+1. Run the terminal-based script:
+   ```bash
+      python3 run_terminal_movie_sentiment.py
+   ```
+2. Enter movie reviews directly into the terminal when prompted. Example:
+   ```bash
+   Enter a movie review (or type 'exit' to quit): This movie was fantastic!
+
+   Input: This movie was fantastic!
+   Prediction: 😊 Positive (Confidence: 97.34%)
+
+   ```
+   
+## **Demo**
+You can run the app locally to test the model:
+1. Run the following command:
+   ```bash
+   python3 run_movie_sentiment.py
+
+   ```
+2. Open the Gradio app in your browser at the provided local URL.
 
 ---
 
 ## **Contributing**
-Feel free to contribute by submitting issues or pull requests. For major changes, please open an issue first to discuss what you’d like to change.
+Feel free to contribute by submitting issues or pull requests. For major changes, please open an issue first to discuss what you’d like to change. :tada:
 
 ---
 
