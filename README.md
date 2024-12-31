@@ -62,6 +62,7 @@ To run the project locally, follow these steps:
 
 ## **Training** 🏋️
    ```bash
+   pip install transformers datasets
    python3 train_movie_sentiment.py
    ```
 
