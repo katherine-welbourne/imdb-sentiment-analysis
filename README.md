@@ -62,6 +62,8 @@ To run the project locally, follow these steps:
 
 ## **Training** 🏋️
    ```bash
+   pip install transformers[torch]
+   pip install accelerate
    pip install transformers datasets
    python3 train_movie_sentiment.py
    ```
