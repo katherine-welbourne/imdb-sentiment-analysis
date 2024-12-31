@@ -140,7 +140,7 @@ You can run the app locally to test the model:
 ---
 
 ## **Contributing**
-Feel free to contribute by submitting issues or pull requests. For major changes, please open an issue first to discuss what you’d like to change. :tada:
+Feel free to contribute by submitting issues or pull requests. 
 
 ---
 
