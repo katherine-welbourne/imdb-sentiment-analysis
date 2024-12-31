@@ -12,8 +12,9 @@ Fine-tuning a BERT-based language model to classify movie reviews as positive or
 6. [Evaluation](#evaluation)
 7. [Results](#results)
 8. [Demo](#demo)
-9. [Contributing](#contributing)
-10. [License](#license)
+9. [Pre-Trained Model](#pre-trained-model)
+10. [Contributing](#contributing)
+11. [License](#license)
 
 ---
 
@@ -133,6 +134,17 @@ You can test the sentiment analysis model locally using two approaches:
 
 ---
 
+## **Pre-Trained Model** 🚀
+If you do not have access to high RAM or a GPU like the A100, you can download the pre-trained model directly:
+
+- [Download Pre-Trained Model from Google Drive](https://drive.google.com/file/d/1Mb2Jjw1p5e02a5luQCl3e29v3LC9f7dA/view?usp=sharing) 📥
+
+After downloading:
+1. Extract the model into the project folder.
+2. Use it with the provided scripts for inference.
+
+---
+
 ## **Contributing** 🤝
 Feel free to contribute by submitting issues or pull requests. 💡✨
 
@@ -140,4 +152,5 @@ Feel free to contribute by submitting issues or pull requests. 💡✨
 
 ## **License** 📜
 This project is licensed under the [MIT License](LICENSE). 📖
-```
+
+---
