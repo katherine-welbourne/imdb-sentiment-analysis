@@ -81,19 +81,6 @@ Metrics:
 - **Steps/Second**: `31.61` 🚀
 - **Epoch**: `3.0` 🔄
 
---- 
-```python
-trainer.evaluate()
-[3125/3125 01:38]
-
-{'eval_loss': 0.3241775333881378,
- 'eval_runtime': 98.8652,
- 'eval_samples_per_second': 252.87,
- 'eval_steps_per_second': 31.609,
- 'epoch': 3.0}
-
-```
-
 ---
 
 ## **Results** 🏆
