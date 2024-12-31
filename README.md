@@ -123,7 +123,7 @@ You can test the sentiment analysis model locally using two approaches:
 ## **Pre-Trained Model** 🚀
 If you do not have access to high RAM or a GPU like the A100, you can download the pre-trained model directly:
 
-- [Download Pre-Trained Model from Google Drive](https://drive.google.com/file/d/1Mb2Jjw1p5e02a5luQCl3e29v3LC9f7dA/view?usp=sharing) 📥
+- [Download Pre-Trained Model from Google Drive](https://drive.google.com/file/d/1Mb2Jjw1p5e02a5luQCl3e29v3LC9f7dA/view?usp=sharing) (236MB) 📥
 
 After downloading:
 1. Extract the model into the project folder.
