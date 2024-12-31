@@ -1,5 +1,10 @@
 # **IMDB Sentiment Analysis** 🎬 🤖
 Fine-tuning a BERT-based language model to classify movie reviews as positive or negative using the IMDB dataset.
+---
+
+<a href="https://github.com/katherine-welbourne/imdb-sentiment-analysis">
+ <img src="assets/img/movieSentimentAnalysis.png" alt="LLM Sentiment Analysis" width="100">
+</a>
 
 ---
 
