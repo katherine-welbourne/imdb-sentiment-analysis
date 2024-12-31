@@ -1,7 +1,7 @@
 from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-# Load the pre-trained tokenizer first
+# Load the pre-trained tokenizer
 model_name = "distilbert-base-uncased"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
@@ -16,16 +16,20 @@ def preprocess_data(examples):
 train_dataset = dataset['train'].map(preprocess_data, batched=True)
 test_dataset = dataset['test'].map(preprocess_data, batched=True)
 
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
-
-# Load a pre-trained model and tokenizer (e.g., DistilBERT)
-model_name = "distilbert-base-uncased"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+# Load a pre-trained model for sequence classification
 model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2)
 
-from transformers import TrainingArguments
-from transformers import Trainer
+# Import additional libraries
+from transformers import TrainingArguments, Trainer
+from sklearn.metrics import accuracy_score, f1_score
 
+# Define a custom compute_metrics function for evaluation
+def compute_metrics(eval_pred):
+    logits, labels = eval_pred
+    predictions = logits.argmax(axis=-1)
+    accuracy = accuracy_score(labels, predictions)
+    f1 = f1_score(labels, predictions, average='weighted')
+    return {"accuracy": accuracy, "f1": f1}
 
 # Training arguments
 training_args = TrainingArguments(
@@ -42,13 +46,17 @@ training_args = TrainingArguments(
     push_to_hub=False,
 )
 
+# Create Trainer with compute_metrics added
 trainer = Trainer(
     model=model,
     args=training_args,
     train_dataset=train_dataset,
     eval_dataset=test_dataset,
     tokenizer=tokenizer,
+    compute_metrics=compute_metrics,  # Include metrics
 )
+
+
 # Train the model
 trainer.train()
 
