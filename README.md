@@ -1,4 +1,4 @@
-# **IMDB Sentiment Analysis** 🎬🤖
+# **IMDB Sentiment Analysis** 🎬 🤖
 Fine-tuning a BERT-based language model to classify movie reviews as positive or negative using the IMDB dataset.
 
 ---
