@@ -75,8 +75,24 @@ trainer.evaluate()
 ```
 
 Metrics:
-- **Accuracy**: 94% ✅
-- **F1-Score**: 93% 🎯
+- **Evaluation Loss**: `0.3242` 📉
+- **Evaluation Runtime**: `98.87 seconds` ⏱️
+- **Samples/Second**: `252.87` ⚡
+- **Steps/Second**: `31.61` 🚀
+- **Epoch**: `3.0` 🔄
+
+--- 
+```python
+trainer.evaluate()
+[3125/3125 01:38]
+
+{'eval_loss': 0.3241775333881378,
+ 'eval_runtime': 98.8652,
+ 'eval_samples_per_second': 252.87,
+ 'eval_steps_per_second': 31.609,
+ 'epoch': 3.0}
+
+```
 
 ---
 
